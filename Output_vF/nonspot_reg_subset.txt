@@ -1,0 +1,35 @@
+NON-SPOT EC_Points regression on first 10M rows
+
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:              EC_Points   R-squared:                        0.1544
+Estimator:                   PanelOLS   R-squared (Between):              0.1068
+No. Observations:              125744   R-squared (Within):               0.1381
+Date:                Thu, Jun 12 2025   R-squared (Overall):              0.1470
+Time:                        12:41:37   Log-likelihood                -1.877e+06
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      7620.5
+Entities:                         513   P-value                           0.0000
+Avg Obs:                       245.12   Distribution:                F(3,125203)
+Min Obs:                       1.0000                                           
+Max Obs:                    2.467e+04   F-statistic (robust):             5.2184
+                                        P-value                           0.0013
+Time periods:                      26   Distribution:                F(3,125203)
+Avg Obs:                       4836.3                                           
+Min Obs:                       7.0000                                           
+Max Obs:                       7404.0                                           
+                                                                                
+                              Parameter Estimates                               
+================================================================================
+              Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+--------------------------------------------------------------------------------
+IsAutodealer -6.485e+04  5.305e+04    -1.2224     0.2216  -1.688e+05   3.913e+04
+Volatility       0.6580     0.2976     2.2111     0.0270      0.0747      1.2413
+ln_Notional     -391.47     1735.4    -0.2256     0.8215     -3792.8      3009.9
+================================================================================
+
+F-test for Poolability: 9.1287
+P-value: 0.0000
+Distribution: F(537,125203)
+
+Included effects: Entity, Time
